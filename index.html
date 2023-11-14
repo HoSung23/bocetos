@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Ho Sung Choi">
+  <meta name="description"
+    content="Primer documento para portafolio, propuesta de pagina para edificio de apartamentos">
+  <meta name="keyeords" content="CSS, HTML, JavaScript, React">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--CSS-->
+  <link href="styles.css" rel="stylesheet">
+  <!--title-->
+  <title>Apartamentos</title>
+  <link rel="icon" type="image/x-icon" href="/imagenes/icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-md bg-ligth border-bottom">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/logo.png" width="100px" alt="Logo del establecimiento">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobremi">Modelos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#imgs">Amenidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mapa">Ubicacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--hero-->
+  <section class="hero align-items-stretch" id="home">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-principal" src="./imagenes/imagendeledificio.svg" alt="Imagen del edificio">
+      <h1>Lorem Ipsum</h1>
+      <h2>Este es un boceto para la pagina</h2>
+    </div>
+  </section>
+  <!--description-->
+  <section class="sobremi seccion-oscura" id="sobremi">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Loren Ipsum</h2>
+      <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipiscing elit sed senectus, lectus odio vel
+        dapibus nascetur platea imperdiet mi ad consequat, sociosqu dui ac scelerisque tincidunt primis lacus inceptos.
+        Vel ornare ante eget cum quis fames laoreet donec lacinia, enim penatibus litora fusce diam nostra massa.
+        Ultrices auctor euismod laoreet integer magna eu mauris rutrum vel, sed potenti metus pellentesque nostra nulla
+        porta.</p>
+    </div>
+  </section>
+  <section class="proyectos-recientes seccion-clara d-flex flex-column" id="imgs">
+    <h2 class="seccion-titulo texto-negro">Amenidades</h2>
+    <h3 class="seccion-descripcion"> Amenidades de los apartamentos</h3>
+    <div class="container text-center proyectos-contenedor">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/apartamentos-compressor.jpg" alt="proyecto 1">
+            <div class="overlay">
+              <p>AMENIDAD1</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-cup-hot-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/apartamentos-compressor.jpg" alt="proyecto 1">
+            <div class="overlay">
+              <p>AMENIDAD1</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-cup-hot-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/apartamentos-compressor.jpg" alt="proyecto 1">
+            <div class="overlay">
+              <p>AMENIDAD1</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-cup-hot-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://getbootstrap.com/docs/5.3/layout/columns/" target="_blank" rel="noopener noreferrer">
+          <button type="button" class="col-3 btn btn-info justify-content-center text-center">Mas imagenes
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </a>
+  </section>
+  <section class="mapa" id="mapa">
+    <div class="container">
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.3721815811064!2d-90.55309734329354!3d14.621341863460271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a1a5265eb313%3A0x5c207233dde680dd!2sPanda%20Express!5e0!3m2!1ses!2sgt!4v1699871201141!5m2!1ses!2sgt"
+          width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center" id="contacto">
+    <div class="iconos-redes d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://wa.me/50249331504" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="mailto: choihosung23@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+    </div>
+    <div class="dda">Ho Sung Choi (2023) &#169 </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
